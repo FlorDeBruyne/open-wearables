@@ -25,6 +25,8 @@ def create_svix_db() -> None:
             print("✓ Created 'svix' database.")
         except psycopg.errors.DuplicateDatabase:
             print("Svix database already exists, skipping.")
+        except psycopg.errors.InsufficientPrivilege:
+            print("Insufficient privileges to create database, assuming it already exists.")
 
 
 if __name__ == "__main__":
