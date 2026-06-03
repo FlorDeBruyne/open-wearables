@@ -25,4 +25,4 @@ jobs:
       with:
         context: ./backend    # waar staat de Dockerfile?
         push: true
-        tags: ghcr.io/${{ github.repository_owner }}/open-wearables:latest
+        tags: ghcr.io/${{ github.repository_owner | lower }}/open-wearables:latest
