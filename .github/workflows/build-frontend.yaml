@@ -2,10 +2,9 @@ name: Build and Push Frontend
 
 on:
   push:
-    branches: ["main"]
-    paths:
-      - "frontend/**"
-
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 jobs:
   build:
     runs-on: ubuntu-latest
