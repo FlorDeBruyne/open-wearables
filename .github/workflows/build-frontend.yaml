@@ -29,4 +29,4 @@ jobs:
           push: true
           tags: ghcr.io/flordebruyne/open-wearables-frontend:latest
           build-args: |
-            VITE_API_URL=http://open-wearables.homelab.local
+            VITE_API_URL=http://open-wearables.homelab.local:30080
